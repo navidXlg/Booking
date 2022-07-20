@@ -1,0 +1,102 @@
+/////logo
+
+.logo{
+    height: 4rem;
+    margin-left: 1rem;
+}
+//search box
+.search{
+    flex: 0 0 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__input{
+        width: 80%;
+        border: none;
+        border-radius: 10rem;
+        background-color: var(--grey-light-2);
+        font-family: inherit;
+        font-size: inherit;
+        padding: .6rem;
+        transition: all ease .5s;
+        margin-right: -3rem;
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var(--grey-light-3);
+        }
+    }
+
+    &__btn{
+        border: none;
+        background-color: var(--grey-light-2);
+
+        &:focus{
+            outline: none;
+        }
+
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+    .icon-magnifying-glass{
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: var(--grey-dark-3);
+    }
+
+}
+
+//nav-head
+
+
+.nav-head{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: center;
+
+    & > *{
+        padding: 0 1rem;
+        cursor: pointer;
+        height: 100%;
+    }
+    & > *:hover{
+        background-color: var(--grey-light-2);
+    }
+  
+    &__bookmark{
+        position: relative;  
+
+    }
+
+    &__message{
+        position: relative;
+    }
+    .icon-bookmark{
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: var(--grey-dark-3);
+    }
+    .icon-message{
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: var(--grey-dark-3);
+    }
+
+    .user-notif{
+        width: 1.3rem;
+        height: 1.3rem;
+        position: absolute;
+        font-size: 1rem;
+        background-color: red;
+        border-radius: 50%;
+        color: white;
+        top: 1.5rem;
+        left: 2.3rem;
+    }
+
+    &__user{
+        
+    }
+}

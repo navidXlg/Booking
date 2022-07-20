@@ -1,0 +1,31 @@
+.container{
+    max-width: 105rem;
+    margin: 9rem auto;
+    background-color: var(--grey-light-3);
+    box-shadow: 0 1rem 2rem black;
+    min-height: 60rem;
+}
+
+.header{
+    height: 6.5rem;
+    font-size: 1.3rem;
+    background-color: #ffff;
+    border-bottom: var(--grey-light-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex; 
+}
+
+.sidebar{
+    background-color: var(--grey-dark-1);
+    flex: 0 0 20%;
+}
+
+.main{
+    background-color: #ffff;
+    flex: 1;
+}
