@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Navid-Khaleghi" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="./style/main.css" />
     <title>hotel booking</title>
   </head>
@@ -42,9 +44,101 @@
           </div>
         </nav>
       </header>
+
       <div class="content">
-        <div class="sidebar">SiderBar</div>
-        <main class="main">main</main>
+        <div class="sidebar">
+          <ul class="sider">
+            <li class="sider__item active">
+              <a href="#" class="link">
+                <svg class="icon icon-home">
+                  <use xlink:href="./img/symbol-defs.svg#icon-home"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li class="sider__item">
+              <a href="#" class="link">
+                <svg class="icon icon-home">
+                  <use xlink:href="./img/symbol-defs.svg#icon-aircraft"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li class="sider__item">
+              <a href="#" class="link">
+                <svg class="icon icon-home">
+                  <use xlink:href="./img/symbol-defs.svg#icon-key"></use>
+                </svg>
+                <span>Car renter</span>
+              </a>
+            </li>
+            <li class="sider__item">
+              <a href="#" class="link">
+                <svg class="icon icon-home">
+                  <use xlink:href="./img/symbol-defs.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <p class="text">&copy; Desgined by navid corpration</p>
+        </div>
+        <main class="main">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="./img/slide-02.jpg"
+                alt="photo of laptop"
+                class="gallery__item-photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./img/bg-static.jpg"
+                alt="photo of laptop"
+                class="gallery__item-photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="./img/slide-02.jpg"
+                alt="photo of laptop"
+                class="gallery__item-photo"
+              />
+            </figure>
+          </div>
+
+          <div class="head">
+            <h1 class="head__heading">Hotel Shahriar</h1>
+
+            <div class="head__stars">
+              <svg class="icon icon-star">
+                <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+              </svg>
+              <svg class="icon icon-star">
+                <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+              </svg>
+              <svg class="icon icon-star">
+                <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+              </svg>
+              <svg class="icon icon-star">
+                <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="head__loaction">
+              <svg class="icon icon-loction">
+                <use xlink:href="./img/symbol-defs.svg#icon-location-pin"></use>
+              </svg>
+              <p>Tabriz,East Azerbijan</p>
+            </div>
+
+            <div class="head__rating">
+              <div class="rating-avrage">7.5</div>
+              <div class="rating-number">250</div>
+            </div>
+          </div>
+        </main>
       </div>
     </section>
   </body>

@@ -29,6 +29,10 @@ html {
           box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   font-family: sans-serif;
   font-weight: 500;
@@ -155,6 +159,110 @@ body {
   left: 2.3rem;
 }
 
+.main {
+  height: 70rem;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text {
+  font-size: 1.1rem;
+  color: var(--grey-light-4);
+  text-align: center;
+  padding: .9rem;
+}
+
+.sider__item {
+  font-size: 1.5rem;
+  margin-top: 1.8rem;
+  position: relative;
+}
+
+.sider__item::before {
+  content: "";
+  width: 2.5px;
+  height: 100%;
+  background-color: var(--primary-dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: width .4s .5s, -webkit-transform .5s;
+  transition: width .4s .5s, -webkit-transform .5s;
+  transition: transform .5s, width .4s .5s;
+  transition: transform .5s, width .4s .5s, -webkit-transform .5s;
+}
+
+.sider__item:hover::before,
+.sider .active::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  width: 100%;
+}
+
+.sider .link:visited,
+.sider .link:link {
+  color: var(--grey-light-3);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.8rem 1.8rem;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.sider .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+  margin-right: 0.7rem;
+}
+
+.main .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .gallery__item-photo {
+  display: block;
+  width: 100%;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
 .container {
   max-width: 105rem;
   margin: 9rem auto;
@@ -189,8 +297,8 @@ body {
 .sidebar {
   background-color: var(--grey-dark-1);
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%;
+      -ms-flex: 0 0 16%;
+          flex: 0 0 16%;
 }
 
 .main {
