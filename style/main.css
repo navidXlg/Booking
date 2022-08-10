@@ -365,19 +365,179 @@ body {
 .btn-inline {
   color: var(--primary-dark);
   font-size: inherit;
+  border: none;
   border-bottom: 1px solid currentColor;
   margin-bottom: .2rem;
   background-color: transparent;
+  outline: none;
+}
+
+.btn-inline span {
+  margin-left: .3rem;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .btn-inline:hover {
   color: var(--grey-dark-3);
 }
 
+.btn-inline:hover span {
+  margin-left: .8rem;
+}
+
 .btn-inline:focus {
   outline: none;
   -webkit-animation: animated 1s infinite;
           animation: animated 1s infinite;
+}
+
+.description-text {
+  text-align: left;
+  color: var(--grey-dark-3);
+}
+
+.description-text:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.list {
+  margin: 2rem 0;
+  padding: 2rem;
+  font-size: 1.2rem;
+  border-top: 0.2rem solid #cac6c6;
+  border-bottom: 0.2rem solid #cac6c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list--item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.list--item::before {
+  content: "";
+  width: 1rem;
+  display: inline-block;
+  margin-right: .7rem;
+  height: 1rem;
+  background-image: url("../img/SVG/chevron-thin-right.svg");
+  background-size: cover;
+}
+
+.recommend {
+  color: var(--primary-dark);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommend--photo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: .2rem solid #ffff;
+}
+
+.recommend--photo:not(:last-child) {
+  margin-right: -1.5rem;
+}
+
+.rewiev {
+  font-size: 1.2rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.5rem;
+  padding: 2.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.rewiev__text {
+  position: relative;
+  z-index: 10;
+}
+
+.rewiev__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.rewiev__user--photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+}
+
+.rewiev__user--info {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+.rewiev__user--name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: black;
+}
+
+.rewiev__user__date {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.rewiev__rating {
+  font-size: 2rem;
+  color: var(--primary-dark);
+}
+
+.rewiev::before {
+  content: "\201C";
+  position: absolute;
+  font-size: 15rem;
+  top: -3rem;
+  left: -.8rem;
+  z-index: 1;
+}
+
+.footer {
+  text-align: center;
+  padding: 5rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.footer__btn {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding: 2rem 7rem;
+  border-radius: 10rem;
+  background-color: var(--primary-dark);
+  border: none;
+  position: relative;
+}
+
+.footer__btn .disactive {
+  position: absolute;
 }
 
 .container {
@@ -409,6 +569,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 85rem;
 }
 
 .sidebar {
@@ -429,6 +590,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.5rem;
   padding: 3rem;
   background-color: var(--grey-light-3);
   border-bottom: 1px solid var(--grey-light-3);
@@ -446,10 +608,19 @@ body {
 }
 
 .user-revive {
-  background-color: blue;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .center-flex {

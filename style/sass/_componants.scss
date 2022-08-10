@@ -250,17 +250,175 @@
  .btn-inline{
       color: var(--primary-dark);
       font-size: inherit;
+      border: none;
       border-bottom: 1px solid currentColor;
       margin-bottom: .2rem;
       background-color: transparent;
+      outline: none;
+
+      & span{
+        margin-left: .3rem;
+        transition: all ease .3s;
+     }
 
      &:hover{
          color: var(--grey-dark-3);
+
+         span{
+
+            margin-left:.8rem;
+         }
      }
 
      &:focus{
         outline: none;
         animation:animated 1s infinite;
      }
+
+    
+
  }
+
+////// STORIES OF VISITORS
+.description-text{
+    text-align: left;
+    color: var(--grey-dark-3);
+    &:not(:last-of-type){
+        margin-bottom: 2rem;
+    }
+    
+}
+
+.list{
+    margin: 2rem 0;
+    padding: 2rem;
+    font-size: 1.2rem;
+    border-top: .2rem solid rgb(202, 198, 198);
+    border-bottom: .2rem solid rgb(202, 198, 198);
+    display: flex;
+    flex-wrap: wrap;
+
+    
+    &--item{
+        flex: 0 0 50%;
+    }
+
+    &--item::before{
+        content: "";
+        width: 1rem;
+        display: inline-block;
+        margin-right: .7rem;
+        height: 1rem;
+        background-image: url("../img/SVG/chevron-thin-right.svg");
+        background-size: cover;
+    }
+}
+
+
+.recommend{
+    color: var(--primary-dark);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--photo{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        border: .2rem solid #ffff;
+    }
+    &--photo:not(:last-child){
+
+        margin-right: -1.5rem;
+    }
+}
+
+
+.rewiev{
+    font-size: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    overflow: hidden;
+    position: relative;
+    &__text{
+        position: relative;
+        z-index: 10;
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        &--photo{
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 50%;
+        }
+
+        &--info{
+            margin-right: auto;
+            margin-left: 1rem;
+        }
+
+        &--name{
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: black;
+        }
+
+        &__date{
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+    }
+    &__rating{
+        font-size: 2rem;
+        color: var(--primary-dark);
+    }
+    
+    &::before{
+        content: "\201C";
+        position: absolute;
+        font-size:15rem;
+        top: -3rem;
+        left: -.8rem;
+        z-index: 1;
+    }
+}
+//////////////////////
+/// FOOTER
+.footer{
+    text-align: center;
+    padding: 5rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    &__title{
+
+    }
+    &__btn{
+    color: #fff;
+     font-weight: 400;
+     text-transform: uppercase;
+     margin-top: 2rem;   
+     padding: 2rem 7rem;
+     border-radius: 10rem;
+     background-color: var(--primary-dark);
+     border: none;
+     position: relative;
+
+     .active{
+
+     }
+     .disactive{
+        position: absolute;
+     }
+
+    }
+
+}
+
 
