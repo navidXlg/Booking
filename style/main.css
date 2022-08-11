@@ -29,6 +29,12 @@ html {
           box-sizing: border-box;
 }
 
+@media only screen and (max-width: 58em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -183,10 +189,33 @@ body {
   padding: .9rem;
 }
 
+@media only screen and (max-width: 49em) {
+  .text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 49em) {
+  .sider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .sider__item {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 1.8rem;
   position: relative;
+}
+
+@media only screen and (max-width: 49em) {
+  .sider__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 0;
+  }
 }
 
 .sider__item::before {
@@ -228,11 +257,43 @@ body {
           justify-content: baseline;
 }
 
+@media only screen and (max-width: 49em) {
+  .sider .link:visited,
+  .sider .link:link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 31.3em) {
+  .sider .link:visited,
+  .sider .link:link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .sider .icon {
   width: 1.5rem;
   height: 1.5rem;
   fill: currentColor;
   margin-right: 0.7rem;
+}
+
+@media only screen and (max-width: 31.3em) {
+  .sider .icon {
+    margin-bottom: .8rem;
+  }
 }
 
 .main .gallery {
@@ -270,6 +331,12 @@ body {
   padding: 2.52rem;
 }
 
+@media only screen and (max-width: 28.1em) {
+  .head__heading {
+    font-size: 1.3rem;
+  }
+}
+
 .head__stars {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -287,6 +354,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 28.1em) {
+  .head__loaction {
+    font-size: 1.3rem;
+  }
 }
 
 .head__rating {
@@ -314,6 +387,12 @@ body {
 .head__rating .rating-avrage {
   font-size: 2rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 28.1em) {
+  .head__rating .rating-avrage {
+    font-size: 1.3rem;
+  }
 }
 
 .head .icon-loaction {
@@ -390,6 +469,16 @@ body {
   outline: none;
   -webkit-animation: animated 1s infinite;
           animation: animated 1s infinite;
+}
+
+.description {
+  width: 100%;
+}
+
+@media only screen and (max-width: 38.4em) {
+  .description {
+    margin-bottom: 2rem;
+  }
 }
 
 .description-text {
@@ -578,7 +667,14 @@ body {
   background-color: var(--grey-light-3);
   -webkit-box-shadow: 0 1rem 2rem black;
           box-shadow: 0 1rem 2rem black;
-  min-height: 60rem;
+}
+
+@media only screen and (max-width: 66em) {
+  .container {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .header {
@@ -601,7 +697,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 85rem;
+  min-height: 90rem;
+}
+
+@media only screen and (max-width: 49em) {
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -626,6 +731,15 @@ body {
   padding: 3rem;
   background-color: var(--grey-light-3);
   border-bottom: 1px solid var(--grey-light-3);
+}
+
+@media only screen and (max-width: 38.43em) {
+  .deatail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .description {

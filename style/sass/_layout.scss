@@ -3,7 +3,13 @@
     margin: 9rem auto;
     background-color: var(--grey-light-3);
     box-shadow: 0 1rem 2rem black;
-    min-height: 60rem;
+    // min-height: 60rem;
+
+    @media only screen and(max-width:66em){
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .header{
@@ -18,7 +24,10 @@
 
 .content{
     display: flex; 
-    min-height: 85rem;
+    min-height:90rem;
+    @media only screen and (max-width:49em){
+        flex-direction: column;
+    }
     ///////EROR/////////
 }
 
@@ -39,6 +48,9 @@
     padding: 3rem;
     background-color: var(--grey-light-3);
     border-bottom: 1px solid var(--grey-light-3);
+    @media only screen and (max-width:38.43em){
+        flex-direction: column;
+    }
 }
 .description{
     background-color: #fff;

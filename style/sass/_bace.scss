@@ -25,6 +25,10 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media only screen and(max-width:58em){
+        font-size: 50%;
+    }
 }
 
 li{

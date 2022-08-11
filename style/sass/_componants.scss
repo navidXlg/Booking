@@ -113,14 +113,26 @@
     color: var(--grey-light-4);
     text-align:center;
     padding: .9rem;
+    @media only screen and (max-width:49em){
+        display: none;
+    }
 }
 
 .sider{
+
+    @media only screen and (max-width:49em){
+        display: flex;
+    }
     
     &__item{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-top: 1.8rem;
         position: relative;
+        @media only screen and (max-width:49em){
+            flex: 1;
+            margin-top: 0;
+        }
+       
     }
 
     &__item::before{
@@ -152,6 +164,15 @@
         z-index: 2;
         display: flex;
         justify-content: baseline;
+        @media only screen and (max-width:49em){
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        @media only screen and(max-width:31.3em){
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
     }
 
 
@@ -160,6 +181,9 @@
         height:1.5rem;
         fill: currentColor;
         margin-right: 0.7rem;
+         @media only screen and(max-width:31.3em){
+          margin-bottom: .8rem;
+        }
     }
 }
 
@@ -195,6 +219,9 @@
         text-transform: uppercase;
         line-height: 1rem;
         padding: 2.52rem;
+        @media only screen and(max-width:28.1em){
+            font-size: 1.3rem;
+         }
     }
 
     &__stars{
@@ -206,6 +233,9 @@
     &__loaction{
         display: flex;
         align-items: center;
+        @media only screen and(max-width:28.1em){
+            font-size: 1.3rem;
+         }
     }
 
     &__rating{
@@ -222,6 +252,9 @@
         .rating-avrage{
             font-size: 2rem;
             font-weight: 300;
+            @media only screen and(max-width:28.1em){
+                font-size: 1.3rem;
+             }
         }
     }
 
@@ -280,6 +313,13 @@
  }
 
 ////// STORIES OF VISITORS
+.description{
+    width: 100%;
+    @media only screen and(max-width:38.4em){
+        margin-bottom: 2rem;
+    }
+}
+
 .description-text{
     text-align: left;
     color: var(--grey-dark-3);
@@ -396,9 +436,6 @@
     padding: 5rem;
     text-transform: uppercase;
     font-size: 1.4rem;
-    &__title{
-
-    }
     &__btn{
     color: #fff;
      font-weight: 400;
