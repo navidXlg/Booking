@@ -529,15 +529,47 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2rem;
-  padding: 2rem 7rem;
   border-radius: 10rem;
   background-color: var(--primary-dark);
   border: none;
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.footer__btn .active {
+  display: inline-block;
+  padding: 2rem 7rem;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
 }
 
 .footer__btn .disactive {
   position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  left: 0%;
+  padding: 2rem 0;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+.footer__btn:hover .disactive {
+  top: 0;
+}
+
+.footer__btn:hover .active {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.footer__btn:focus {
+  -webkit-animation: animated 0.8s infinite;
+          animation: animated 0.8s infinite;
 }
 
 .container {

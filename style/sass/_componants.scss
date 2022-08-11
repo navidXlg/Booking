@@ -404,17 +404,41 @@
      font-weight: 400;
      text-transform: uppercase;
      margin-top: 2rem;   
-     padding: 2rem 7rem;
      border-radius: 10rem;
      background-color: var(--primary-dark);
      border: none;
      position: relative;
+     overflow: hidden;
+     cursor: pointer;
 
      .active{
-
+        display: inline-block;
+        padding: 2rem 7rem;
+        height: 100%;
+        width: 100%;
+        transition: all ease .2s;
      }
      .disactive{
         position: absolute;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        top: -100%;
+        left: 0%;
+        padding: 2rem 0;
+        transition: all ease .2s;
+
+     }
+
+     &:hover .disactive{
+        top: 0;
+     }
+     &:hover .active{
+        transform: translateY(100%);
+     }
+
+     &:focus{
+        animation: animated 0.8s infinite;
      }
 
     }
